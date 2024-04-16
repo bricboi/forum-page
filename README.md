@@ -48,4 +48,4 @@ The game has been tested on different web browsers such as oprah, chrome, edge e
   * Navigate to the deploy tab
   * Choose the GitHub deployment method, and connect to the github repository
   * On the deploy tab make sure that the selected branch is main
-  * Click deploy branch and the Site becomes live: [Heroku Quiz game link]()
+  * Click deploy branch and the Site becomes live
