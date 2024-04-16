@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forum</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body>
-    <h1>Forum Posts!</h1>
+    <div>
+        <h1>Forum Posts!</h1>
+    </div>
+    <table>
+        {% for p in posts %}
+        <th>{{ p.title }}</th>
+        <tr>
+            <td>{{ p.post }}</td>
+        </tr>
+        <tr>
+            {% if p.upvote%}
+                <td>Upvoted: Yes</td>
+            {% else %}
+                <td>Upvoted: No</td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
